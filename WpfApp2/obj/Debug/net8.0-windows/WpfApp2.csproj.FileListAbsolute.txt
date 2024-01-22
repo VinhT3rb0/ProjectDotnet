@@ -38,3 +38,13 @@ C:\Users\aduyn\OneDrive\Desktop\projectc#\WpfApp2\obj\Debug\net8.0-windows\WpfAp
 C:\Users\aduyn\OneDrive\Desktop\projectc#\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.dll
 C:\Users\aduyn\OneDrive\Desktop\projectc#\WpfApp2\obj\Debug\net8.0-windows\refint\WpfApp2.dll
 C:\Users\aduyn\OneDrive\Desktop\projectc#\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.pdb
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\DoanhThu.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\LichChieu.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\Login.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2_MarkupCompile.cache
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2_MarkupCompile.lref
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.dll
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\refint\WpfApp2.dll
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.pdb
