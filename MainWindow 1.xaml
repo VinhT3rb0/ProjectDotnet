@@ -1,0 +1,105 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="696" Width="1039">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="MÃ PHIM" HorizontalAlignment="Left" Margin="47,35,0,0" VerticalAlignment="Top" Width="68" Height="26"/>
+        <Label Content="TÊN PHIM" HorizontalAlignment="Left" Margin="47,80,0,0" VerticalAlignment="Top" Height="24" Width="68"/>
+        <Label Content="MÔ  TẢ&#xD;&#xA;" HorizontalAlignment="Left" Margin="47,130,0,0" VerticalAlignment="Top" Width="68" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="138,39,0,0" TextWrapping="Wrap" Text="P01" VerticalAlignment="Top" Width="169" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="138,86,0,0" TextWrapping="Wrap" Text="Avengers: Cuộc chiến vô cực" VerticalAlignment="Top" Width="169" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="138,138,0,0" TextWrapping="Wrap" Text="Avengers: Infinity War" VerticalAlignment="Top" Width="169" Height="18"/>
+        <Label Content="THỂ LOẠI" HorizontalAlignment="Left" Margin="47,180,0,0" VerticalAlignment="Top" Height="27" Width="68"/>
+        <TextBox HorizontalAlignment="Left" Margin="50,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Height="100"/>
+        <CheckBox Content="HÀNH ĐỘNG" HorizontalAlignment="Left" Margin="50,217,0,0" VerticalAlignment="Top" Height="20" Width="98"/>
+        <CheckBox Content="HOẠT HÌNH&#xD;&#xA;" HorizontalAlignment="Left" Margin="50,237,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="HÀI" HorizontalAlignment="Left" Margin="50,257,0,0" VerticalAlignment="Top" Width="98" Checked="CheckBox_Checked"/>
+        <CheckBox Content="VIỄN TƯỞNG" HorizontalAlignment="Left" Margin="50,277,0,0" VerticalAlignment="Top" Width="98"/>
+        <CheckBox Content="PHIÊU LƯU" HorizontalAlignment="Left" Margin="50,297,0,0" VerticalAlignment="Top" Width="98"/>
+        <CheckBox Content="GIA ĐÌNH" HorizontalAlignment="Left" Margin="168,217,0,0" VerticalAlignment="Top" Width="108"/>
+        <CheckBox Content="TÌNH CẢM" HorizontalAlignment="Left" Margin="168,236,0,0" VerticalAlignment="Top" Width="108"/>
+        <CheckBox Content="TÂM LÝ" HorizontalAlignment="Left" Margin="168,257,0,0" VerticalAlignment="Top" Width="99"/>
+        <CheckBox Content="KINH DỊ" HorizontalAlignment="Left" Margin="168,277,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="THỜI LƯỢNG" HorizontalAlignment="Left" Margin="500,43,0,0" VerticalAlignment="Top" Height="26" Width="103"/>
+        <Label Content="SẢN XUẤT" HorizontalAlignment="Left" Margin="500,189,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="ĐẠO DIỄN" HorizontalAlignment="Left" Margin="502,236,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Content="NĂM SX" HorizontalAlignment="Left" Margin="502,285,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="NGÀY KC" HorizontalAlignment="Left" Margin="500,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="88">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="NGÀY KT" HorizontalAlignment="Left" Margin="500,138,0,0" VerticalAlignment="Top" Width="88"/>
+        <TextBox HorizontalAlignment="Left" Margin="649,47,0,0" TextWrapping="Wrap" Text="150" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="649,194,0,0" TextWrapping="Wrap" Text="MỸ" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="649,236,0,0" TextWrapping="Wrap" Text="Anthony Russo&#xD;&#xA;Joe Russo" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="649,293,0,0" TextWrapping="Wrap" Text="2020" VerticalAlignment="Top" Width="120"/>
+        <DatePicker HorizontalAlignment="Left" Margin="649,94,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker HorizontalAlignment="Left" Margin="649,140,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="50,354,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="134,364,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="203,374,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="293,374,0,160"/>
+
+    </Grid>
+    <Button
+VerticalAlignment="Top" Margin="131,354,0,0" HorizontalAlignment="Left" Content="XÓA" Height="27" Width="62"/>
+    <Button
+VerticalAlignment="Top" Margin="218,354,0,0" HorizontalAlignment="Left" Content="SỬA" Height="27" Width="69"/>
+    <Button
+Margin="315,354,0,299" HorizontalAlignment="Left" Content="XEM" Width="73" Height="27" Width="56"/>
+    <Button
+Height="27" Width="56" VerticalAlignment="Top" Margin="50,354,0,0" HorizontalAlignment="Left" Content="THÊM "/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1">
+            <!-- Nội dung ô ở hàng 1, cột 1 -->
+            <TextBlock Text="Cell 1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1">
+            <!-- Nội dung ô ở hàng 1, cột 2 -->
+            <TextBlock Text="Cell 2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="1">
+            <!-- Nội dung ô ở hàng 2, cột 1 -->
+            <TextBlock Text="Cell 3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="1">
+            <!-- Nội dung ô ở hàng 2, cột 2 -->
+            <TextBlock Text="Cell 4" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+    </Grid>
+    <DataGrid Name="movieSelectionGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+        <DataGrid.Columns>
+
+            <DataGridTextColumn Header="Tên Phim" Binding="{Binding TenPhim}" Width="200"/>
+            <DataGridTextColumn Header="Giờ Chiếu" Binding="{Binding GioChieu}" Width="100"/>
+            <DataGridTextColumn Header="Tình Trạng" Binding="{Binding TinhTrang}" Width="100"/>
+            <DataGridTextColumn Header="Giá vé" Binding="{Binding GiaVe}" Width="100"/>
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>
