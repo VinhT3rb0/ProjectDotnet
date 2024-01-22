@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectc#\\WpfApp2\\WpfApp2.csproj": {}
+    "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectdotnet\\WpfApp2\\WpfApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectc#\\WpfApp2\\WpfApp2.csproj": {
+    "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectdotnet\\WpfApp2\\WpfApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectc#\\WpfApp2\\WpfApp2.csproj",
+        "projectUniqueName": "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectdotnet\\WpfApp2\\WpfApp2.csproj",
         "projectName": "WpfApp2",
-        "projectPath": "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectc#\\WpfApp2\\WpfApp2.csproj",
+        "projectPath": "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectdotnet\\WpfApp2\\WpfApp2.csproj",
         "packagesPath": "C:\\Users\\aduyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectc#\\WpfApp2\\obj\\",
+        "outputPath": "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectdotnet\\WpfApp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
