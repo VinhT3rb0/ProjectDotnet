@@ -3,28 +3,40 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="655" Width="1300">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="6*"/>
-            <ColumnDefinition Width="317*"/>
-        </Grid.ColumnDefinitions>
-        <Button Grid.Column="3" Content="DOANH THU" HorizontalAlignment="Left" Margin="51,33,0,0" VerticalAlignment="Top" Height="31" Width="200"/>
-        <Button Grid.Column="3" Content="DU LIEU;" HorizontalAlignment="Left" Margin="300,33,0,0" VerticalAlignment="Top" Height="31" Width="208"/>
-        <Button Grid.Column="3" Content="NHAN VIEN" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Height="33" Width="191"/>
-        <Button Grid.Column="3" Content="KHACH HANG" HorizontalAlignment="Left" Margin="799,31,0,0" VerticalAlignment="Top" Height="33" Width="184" Click="Button_Click"/>
-        <Button Grid.Column="3" Content="TAI KHOAN" HorizontalAlignment="Left" Margin="1027,30,0,0" VerticalAlignment="Top" Height="34" Width="201" Click="Button_Click_1"/>
-        <Button Grid.Column="3" Content="PHÒNG CHIẾU" HorizontalAlignment="Left" Margin="75,214,0,0" VerticalAlignment="Top" Height="42" Width="100" Click="Button_Click_3"/>
-        <Button Grid.Column="3" Content="PHIM" HorizontalAlignment="Left" Margin="75,344,0,0" VerticalAlignment="Top" Height="37" Width="100"/>
-        <Button Grid.Column="3" Content="LỊCH CHIẾU" HorizontalAlignment="Left" Margin="75,475,0,0" VerticalAlignment="Top" Height="43" Width="100"/>
-        <Button Grid.Column="3" Content="VÉ" HorizontalAlignment="Left" Margin="75,540,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.207,-1.245" Height="44" Width="100"/>
-        <Border BorderThickness="1" Grid.Column="3" HorizontalAlignment="Left" Height="497" Margin="35,115,0,0" VerticalAlignment="Top" Width="185"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="82" Margin="2,0,0,0" VerticalAlignment="Top" Width="1266"/>
-        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="3" HorizontalAlignment="Left" Height="497" Margin="35,114,0,0" VerticalAlignment="Top" Width="185"/>
-
-    </Grid>
+    <StackPanel Background="#c0c0c0">
+        <Grid Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <Button Margin="10,10,20,0" Background="#9300d4" Foreground="White" Content="Doanh Thu" Height="70"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Button Margin="0,10,20,0" Background="#4069e2" Foreground="White" Content="THỐNG KÊ" Height="70"/>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <Button Margin="0,10,20,0" Background="red" Foreground="White" Content="NHÂN VIÊN" Height="50"/>
+            </StackPanel>
+            <StackPanel Grid.Column="3">
+                <Button Margin="0,10,20,0" Background="#238b22" Foreground="White" Content="KHÁCH HÀNG" Height="50"/>
+            </StackPanel>
+            <StackPanel Grid.Column="4">
+                <Button Margin="0,10,20,0" Background="#daa52a" Foreground="White" Content="TÀI KHOẢN" Height="50"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel Width="200" HorizontalAlignment="Left" Background="#282728" Height="558" >
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Lịch Chiếu" Width="200" Height="50"/>
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Phòng Chiếu" Width="200" Height="50"/>
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Phim" Width="200" Height="50"/>
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Đặt Vé" Width="200" Height="50"/>
+        </StackPanel>
+    </StackPanel>
 </Window>
