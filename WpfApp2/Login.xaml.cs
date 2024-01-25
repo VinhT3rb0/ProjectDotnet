@@ -22,6 +22,7 @@ namespace WpfApp2
         public Login()
         {
             InitializeComponent();
+            Application.Exit();
         }
     }
 }

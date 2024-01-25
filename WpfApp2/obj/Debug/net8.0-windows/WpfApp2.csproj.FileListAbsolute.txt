@@ -48,3 +48,5 @@ C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\W
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.dll
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\refint\WpfApp2.dll
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.pdb
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\PhongChieu.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\TrangChu.g.cs

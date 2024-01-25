@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "e0LHYVpVcTWEIlLt3HSxPCe6zA5MjWaL4b3c6MFBYvLNzTPYtmgLp/Le0M5LrgVuIGZ4zukOpFNIV4pmor/WLw==",
+  "dgSpecHash": "bS8owUomfajYVLfFgdryqOFTaYXhaRU3ENBREUJCEX9HYse9Id4UcnsrALjAQNm/LhUiZEjPG5y8W63EdLHs/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\aduyn\\OneDrive\\Desktop\\projectdotnet\\WpfApp2\\WpfApp2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aduyn\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\aduyn\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\aduyn\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
   "logs": []
 }

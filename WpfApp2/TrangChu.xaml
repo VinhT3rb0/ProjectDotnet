@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp2.TrangChu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="TrangChu" Height="450" Width="800">
+    <StackPanel Background="#c0c0c0">
+        <Grid Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <Button Margin="10,10,20,0" Background="#9300d4" Foreground="White" Content="Doanh Thu" Height="70"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Button Margin="0,10,20,0" Background="#4069e2" Foreground="White" Content="THỐNG KÊ" Height="70"/>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <Button Margin="0,10,20,0" Background="red" Foreground="White" Content="NHÂN VIÊN" Height="70"/>
+            </StackPanel>
+            <StackPanel Grid.Column="3">
+                <Button Margin="0,10,20,0" Background="#238b22" Foreground="White" Content="KHÁCH HÀNG" Height="70"/>
+            </StackPanel>
+            <StackPanel Grid.Column="4">
+                <Button Margin="0,10,20,0" Background="#daa52a" Foreground="White" Content="TÀI KHOẢN" Height="70"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel Width="200" HorizontalAlignment="Left" Background="#282728" Height="558" >
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Lịch Chiếu" Width="200" Height="50"/>
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Phòng Chiếu" Width="200" Height="50"/>
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Phim" Width="200" Height="50"/>
+            <Button Margin="0,20,0,0" Foreground="White" Background="#282728" HorizontalAlignment="Left" Content="Đặt Vé" Width="200" Height="50"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
