@@ -1,8 +1,0 @@
-{
-    "profiles": {
-        "Demo App": {
-            "commandName": "Project",
-            "commandLineArgs": "-p 3DTest -t Inherit -f LeftToRight"
-        }
-    }
-}

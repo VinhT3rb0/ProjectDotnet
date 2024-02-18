@@ -7,36 +7,18 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="DoanhThu.xaml.cs">
+    <Compile Update="CustomControls\BindablePasswordBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Login.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="MainWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="PhongChieu.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="TrangChu.xaml.cs">
+    <Compile Update="View\LoginView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="DoanhThu.xaml">
+    <Page Update="CustomControls\BindablePasswordBox.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="PhongChieu.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="TrangChu.xaml">
+    <Page Update="View\LoginView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

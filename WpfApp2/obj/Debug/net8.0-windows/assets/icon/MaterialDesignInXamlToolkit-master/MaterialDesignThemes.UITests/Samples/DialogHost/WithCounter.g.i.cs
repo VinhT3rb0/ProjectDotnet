@@ -87,8 +87,8 @@ namespace MaterialDesignThemes.UITests.Samples.DialogHost {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfApp2;V1.0.0.0;component/assets/icon/materialdesigninxamltoolkit-master/materi" +
-                    "aldesignthemes.uitests/samples/dialoghost/withcounter.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp2;component/assets/icon/materialdesigninxamltoolkit-master/materialdesignt" +
+                    "hemes.uitests/samples/dialoghost/withcounter.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\..\..\..\assets\icon\MaterialDesignInXamlToolkit-master\MaterialDesignThemes.UITests\Samples\DialogHost\WithCounter.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

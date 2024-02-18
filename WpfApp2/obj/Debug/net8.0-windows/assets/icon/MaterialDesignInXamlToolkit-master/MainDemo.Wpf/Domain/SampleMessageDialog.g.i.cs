@@ -63,8 +63,8 @@ namespace MaterialDesignDemo.Domain {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfApp2;V1.0.0.0;component/assets/icon/materialdesigninxamltoolkit-master/mainde" +
-                    "mo.wpf/domain/samplemessagedialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp2;component/assets/icon/materialdesigninxamltoolkit-master/maindemo.wpf/do" +
+                    "main/samplemessagedialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\..\..\assets\icon\MaterialDesignInXamlToolkit-master\MainDemo.Wpf\Domain\SampleMessageDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

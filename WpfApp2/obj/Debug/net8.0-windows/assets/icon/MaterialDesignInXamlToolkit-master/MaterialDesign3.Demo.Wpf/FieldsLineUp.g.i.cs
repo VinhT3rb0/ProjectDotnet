@@ -161,8 +161,8 @@ namespace MaterialDesign3Demo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfApp2;V1.0.0.0;component/assets/icon/materialdesigninxamltoolkit-master/materi" +
-                    "aldesign3.demo.wpf/fieldslineup.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp2;component/assets/icon/materialdesigninxamltoolkit-master/materialdesign3" +
+                    ".demo.wpf/fieldslineup.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\..\assets\icon\MaterialDesignInXamlToolkit-master\MaterialDesign3.Demo.Wpf\FieldsLineUp.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

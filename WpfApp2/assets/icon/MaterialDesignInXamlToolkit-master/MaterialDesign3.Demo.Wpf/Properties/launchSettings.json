@@ -1,8 +1,0 @@
-{
-    "profiles": {
-        "Demo App": {
-            "commandName": "Project",
-            "commandLineArgs": "configure -p Home -t Inherit -f LeftToRight"
-        }
-    }
-}
