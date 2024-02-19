@@ -4,14 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2.View"
-        xmlns:viewModel="clr-namespace:WpfApp2.ViewModel" xmlns:customcontrols="clr-namespace:WpfApp2.CustomControls"
+        xmlns:viewModel="clr-namespace:WpfApp2.ViewModel"
+        xmlns:customcontrols="clr-namespace:WpfApp2.CustomControls"
         mc:Ignorable="d"
         Title="LoginView" Height="550" Width="800"
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
-        AllowsTransparency="True"
+        AllowsTransparency="True" 
         MouseDown="Window_MouseDown">
     <Window.DataContext>
         <viewModel:LoginViewModel/>
@@ -171,17 +172,16 @@
                             FontWeight="Medium"
                             FontFamily="Montserrat"
                             Margin="0,15,0,0"/>
-                    <customcontrols:BindablePasswordBox Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                        Height="28"
-                                                        Margin="0,5,0,0">
-                        
+                    <customcontrols:BindablePasswordBox Password="{Binding Password}"
+                        Height="28"
+                        Margin="0,5,0,0">
                     </customcontrols:BindablePasswordBox>
                     <TextBlock Text="{Binding ErrorMessage}"
                             Foreground="#D7596D"
                             FontSize="12"
                             FontWeight="Medium"
                             FontFamily="Montserrat"
-                            Margin="0,15,0,0"
+                            Margin="0,10,0,0"
                                TextWrapping="Wrap"/>
                     <Button x:Name="btnLogin"
                             Command="{Binding LoginCommand}"

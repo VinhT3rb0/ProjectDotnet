@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace WpfApp2.ViewModel
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

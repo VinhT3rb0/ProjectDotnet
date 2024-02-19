@@ -12,7 +12,7 @@ namespace WpfApp2.Model
         public string Username { get; set; }
         public string Password { get; set; }
         public string Name { get; set; }
-        public bool LastName { get; set; }
+        public string LastName { get; set; }
         public string Email { get; set; }   
     }
 }
