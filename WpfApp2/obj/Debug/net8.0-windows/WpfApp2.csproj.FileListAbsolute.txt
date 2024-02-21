@@ -52,7 +52,6 @@ C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\A
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2_MarkupCompile.cache
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2_MarkupCompile.lref
-C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\App.baml
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\LoginView.baml
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.g.resources
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.GeneratedMSBuildEditorConfig.editorconfig
@@ -103,3 +102,7 @@ C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\r
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\MainView.g.cs
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\App.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\Styles\ButtonStyles.baml

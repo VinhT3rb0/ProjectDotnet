@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\App.xaml
-3302884281
+5637086233
 
 15452268656
-228-829606578
-CustomControls\BindablePasswordBox.xaml;View\LoginView.xaml;View\MainView.xaml;
+230814071943
+CustomControls\BindablePasswordBox.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\LoginView.xaml;View\MainView.xaml;
 
 False
 
