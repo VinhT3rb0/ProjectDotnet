@@ -5,14 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Runtime.InteropServices;
 using System.Windows.Interop;
+using System.Windows.Forms;
+using Application = System.Windows.Application;
 
 
 namespace WpfApp2.View
@@ -22,6 +19,7 @@ namespace WpfApp2.View
     /// </summary>
     public partial class MainView : Window
     {
+        private System.Windows.Controls.UserControl currentFormChild;
         public MainView()
         {
             InitializeComponent();
@@ -35,12 +33,6 @@ namespace WpfApp2.View
             WindowInteropHelper helper = new WindowInteropHelper(this);
             SendMessage(helper.Handle, 161, 2, 0);
         }
-
-        private void pnlControlBar_MouseEnter(object sender, MouseEventArgs e)
-        {
-            this.MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
-        }
-
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
@@ -63,6 +55,52 @@ namespace WpfApp2.View
             LoginView loginView = new LoginView();
             this.Close();
             loginView.Show();
+        }
+        private void OpenChildForm(System.Windows.Controls.UserControl childControl)
+        {
+            // Đóng cửa sổ hiện tại nếu đã mở
+            if (currentFormChild != null && currentFormChild.Parent is ContentControl parentContentControl)
+            {
+                parentContentControl.Content = null;
+            }
+
+            // Gán UserControl mới làm currentFormChild
+            currentFormChild = childControl;
+
+            // Thêm UserControl vào Content của childContentControl
+            childContentControl.Content = childControl;
+        }
+
+
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenChildForm(new test());
+            
+        }
+
+        private void RadioButton_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Click_3(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Click_5(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
