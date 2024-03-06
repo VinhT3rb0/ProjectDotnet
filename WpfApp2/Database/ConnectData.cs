@@ -10,7 +10,7 @@ namespace WpfApp2.Database
 {
     class ConnectData
     {
-        public class DataProvider
+        public class DataProvider : IDisposable
         {
             private static DataProvider instance;
 
@@ -27,11 +27,23 @@ namespace WpfApp2.Database
 
             public static string ConnectionString { get; internal set; }
 
-            private DataProvider() { }
-
             private string connectionSTR = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=MVVMLoginDb;Integrated Security=True;Encrypt=False";
 
+            public SqlConnection connection;
+            public DataProvider()
+            {
+                connection = new SqlConnection(connectionSTR);
+                connection.Open();
+            }
 
+            public void Dispose()
+            {
+                if (connection != null)
+                {
+                    connection.Dispose();
+                    connection = null;
+                }
+            }
             public DataTable ExecuteQuery(string query, object[] paramater = null)
             {
                 DataTable data = new DataTable();

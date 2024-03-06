@@ -13,20 +13,20 @@
         AllowsTransparency="True">
     <Border CornerRadius="10"
         BorderThickness="1">
-            <Border.BorderBrush>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="{StaticResource winBorderColor1}" Offset="0"/>
-                    <GradientStop Color="{StaticResource winBorderColor2}" Offset="0.75"/>
-                    <GradientStop Color="{StaticResource winBorderColor3}" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.BorderBrush>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                
-                <!--Nav-->
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="{StaticResource winBorderColor1}" Offset="0"/>
+                <GradientStop Color="{StaticResource winBorderColor2}" Offset="0.75"/>
+                <GradientStop Color="{StaticResource winBorderColor3}" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Nav-->
 
             <Border CornerRadius="10,0,0,10"
                     Grid.Column="0">
@@ -99,8 +99,8 @@
                     </RadioButton>
                 </StackPanel>
             </Border>
-                
-                <!--Main Section-->
+
+            <!--Main Section-->
 
             <Border CornerRadius="0,10,10,0"
                     Grid.Column="1">
@@ -142,17 +142,18 @@
                                 Click="btnMinimize_Click">
                             <fa:IconImage Icon="WindowMinimize" Width="12" Style="{StaticResource controlButtonIcon}"/>
                         </Button>
-                       
+
                     </StackPanel>
                     <Grid Grid.Row="1">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="45*"/>
+                            <ColumnDefinition Width="254*"/>
+                            <ColumnDefinition Width="299*"/>
                         </Grid.ColumnDefinitions>
 
                         <StackPanel Grid.Column="0"
                                     Orientation="Horizontal"
-                                    VerticalAlignment="Center">
+                                    VerticalAlignment="Center" Grid.ColumnSpan="2">
                             <fa:IconImage Icon="Ticket"
                                           Height="20"
                                           Width="20"
@@ -166,7 +167,7 @@
                                        VerticalAlignment="Center"/>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="1"
+                        <StackPanel Grid.Column="2"
                                     Orientation="Horizontal"
                                     FlowDirection="RightToLeft"
                                     VerticalAlignment="Center"
@@ -221,9 +222,9 @@
                         <ContentControl x:Name="childContentControl"/>
                     </Grid>
 
-                    
+
                 </Grid>
             </Border>
         </Grid>
-        </Border>
+    </Border>
 </Window>

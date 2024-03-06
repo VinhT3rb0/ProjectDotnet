@@ -5,8 +5,141 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp2.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="390" d:DesignWidth="600">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"
+              HorizontalAlignment="Left">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnAddFirm"
+                    BorderThickness="0"
+                    Content="Thêm Phim"
+                    Foreground="White"
+                    FontSize="12"
+                            Margin="20,0,0,0"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Click="btnAddFirm_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#462ad8"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#28aeed"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="100" Height="35"
+                                CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="btnEdit"
+                    Grid.Column="1"
+                    BorderThickness="0"
+                    Content="Sửa Phim"
+                    Foreground="White"
+                    FontSize="12"
+                            Margin="20,0,0,0"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Click="btnEdit_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#462ad8"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#28aeed"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="100" Height="35"
+                                CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="btnDelete"
+                    Grid.Column="2"
+                    BorderThickness="0"
+                    Content="Xóa phim"
+                    Foreground="White"
+                    FontSize="12"
+                    Margin="20,0,0,0"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Click="btnDelete_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#462ad8"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#28aeed"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="100" Height="35"
+                                CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="movieDataGrid"
+                      IsReadOnly="True"
+                      AutoGenerateColumns="False"
+                      ItemsSource="{Binding }"
+                      Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Header="Tên phim"
+                        MinWidth="150"
+                        Width="*"/>
+                    <DataGridTextColumn
+                        Header="Giờ chiếu"
+                        MinWidth="60"
+                        Width="*"/>
+                    <DataGridTextColumn
+                        Header="Phòng chiếu"
+                        MinWidth="90"
+                        Width="*"/>
+                    <DataGridTextColumn
+                        Header="Thời lượng"
+                        MinWidth="90"
+                        Width="*"/>
+                    <DataGridTextColumn
+                        Header="Giá vé"
+                        MinWidth="90"
+                        Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </Grid>
 </UserControl>

@@ -10,16 +10,13 @@
     <Compile Update="CustomControls\BindablePasswordBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\DatVe.xaml.cs">
+    <Compile Update="View\Datve.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\LoginView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\MainView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\test.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ThemPhim.xaml.cs">
@@ -36,16 +33,13 @@
     <Page Update="Styles\UIColors.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\DatVe.xaml">
+    <Page Update="View\Datve.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\LoginView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\MainView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="View\test.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ThemPhim.xaml">

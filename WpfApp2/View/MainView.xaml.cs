@@ -74,7 +74,7 @@ namespace WpfApp2.View
 
         private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
-            OpenChildForm(new test());
+            OpenChildForm(new DatVe());
             
         }
 

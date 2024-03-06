@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp2.Database;
+using WpfApp2.Models;
+using static WpfApp2.Database.ConnectData;
 
 namespace WpfApp2.View
 {
@@ -23,6 +26,26 @@ namespace WpfApp2.View
         public DatVe()
         {
             InitializeComponent();
+            Ve _ve = new Ve();
+            LoadData();
+        }
+        private void LoadData()
+        {
+            
+        }
+        private void btnAddFirm_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

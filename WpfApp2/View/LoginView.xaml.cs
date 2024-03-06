@@ -13,7 +13,6 @@ namespace WpfApp2.View
         public LoginView()
         {
             InitializeComponent();
-            string TenDangNhap = "", TenNhanVien = "", MatKhau = "", Quyen = "";
         }
         private void Window_MouseDown(object sender, MouseEventArgs e)
         {
