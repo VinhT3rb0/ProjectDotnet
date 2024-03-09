@@ -21,7 +21,7 @@ public partial class Phim
 
     public bool IsDeleted { get; set; }
 
-    public TimeOnly ThoiLuong { get; set; }
+    public int ThoiLuong { get; set; }
 
     public virtual ICollection<ShowTime> ShowTimes { get; set; } = new List<ShowTime>();
 

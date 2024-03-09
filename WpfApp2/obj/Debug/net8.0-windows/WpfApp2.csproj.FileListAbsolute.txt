@@ -209,3 +209,6 @@ C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\r
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThongTinPhim.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThongTinPhim.baml

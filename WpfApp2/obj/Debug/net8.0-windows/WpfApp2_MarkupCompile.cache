@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\App.xaml
-71661016165
+81066072453
 
-24-1065453213
+25921100054
 246-209937670
-CustomControls\BindablePasswordBox.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\Datve.xaml;View\LoginView.xaml;View\MainView.xaml;View\ThemPhim.xaml;
+CustomControls\BindablePasswordBox.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\Datve.xaml;View\LoginView.xaml;View\MainView.xaml;View\ThemPhim.xaml;View\ThongTinPhim.xaml;
 
-True
+False
 

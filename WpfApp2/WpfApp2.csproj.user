@@ -22,6 +22,9 @@
     <Compile Update="View\ThemPhim.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\ThongTinPhim.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="CustomControls\BindablePasswordBox.xaml">
@@ -43,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ThemPhim.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ThongTinPhim.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

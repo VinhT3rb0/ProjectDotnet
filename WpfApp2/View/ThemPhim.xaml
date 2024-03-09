@@ -13,8 +13,7 @@
         Background="Transparent"
         AllowsTransparency="True" >
     <Border CornerRadius="10"                    
-            BorderThickness="2"
-            Opacity="0.7">
+            BorderThickness="2">
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="{StaticResource winBorderColor1}" Offset="0"/>

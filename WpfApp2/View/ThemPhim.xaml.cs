@@ -26,7 +26,10 @@ namespace WpfApp2.View
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            MainView mainView = new MainView();
+            this.Hide();
+            mainView.Show();
+
         }
     }
 }

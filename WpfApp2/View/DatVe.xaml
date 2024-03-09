@@ -4,12 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp2.View"
+             xmlns:conv="clr-namespace:WpfApp2.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="390" d:DesignWidth="600">
+    <UserControl.Resources>
+        <conv:ImagePathToImageSourceConverter x:Key="ImagePathConverter"/>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0"
               HorizontalAlignment="Left">
@@ -111,6 +116,7 @@
                 </Button.Template>
             </Button>
         </Grid>
+        
         <Grid Grid.Row="1">
             <DataGrid x:Name="movieDataGrid"
                       IsReadOnly="True"
@@ -121,25 +127,64 @@
                     <DataGridTextColumn
                         Header="Tên phim"
                         MinWidth="150"
+                        Binding="{Binding TenPhim}"
                         Width="*"/>
                     <DataGridTextColumn
-                        Header="Giờ chiếu"
+                        Header="Thể loại"
                         MinWidth="60"
+                        Binding="{Binding TheLoai}"
                         Width="*"/>
                     <DataGridTextColumn
-                        Header="Phòng chiếu"
+                        Header="Đạo diễn"
                         MinWidth="90"
+                        Binding="{Binding DaoDien}"
                         Width="*"/>
                     <DataGridTextColumn
                         Header="Thời lượng"
                         MinWidth="90"
+                        Binding="{Binding ThoiLuong}"
                         Width="*"/>
-                    <DataGridTextColumn
-                        Header="Giá vé"
-                        MinWidth="90"
-                        Width="*"/>
+                    <DataGridTemplateColumn Header="Poster">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding HinhAnh, Converter={StaticResource ImagePathConverter}}" Width="50" Height="50"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
+        <Button x:Name="btnBuyTicket"
+        BorderThickness="0"
+                HorizontalAlignment="Right"
+                Grid.Row="2"
+        Content="Đặt vé"
+        Foreground="White"
+        FontSize="12"
+                Margin="0,0,20,0"
+        FontFamily="Montserrat"
+        Cursor="Hand"
+        Click="btnBuyTicket_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#462ad8"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#28aeed"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="100" Height="35"
+                    CornerRadius="20"
+                    Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </UserControl>

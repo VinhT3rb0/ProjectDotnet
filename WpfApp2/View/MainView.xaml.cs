@@ -58,16 +58,11 @@ namespace WpfApp2.View
         }
         private void OpenChildForm(System.Windows.Controls.UserControl childControl)
         {
-            // Đóng cửa sổ hiện tại nếu đã mở
             if (currentFormChild != null && currentFormChild.Parent is ContentControl parentContentControl)
             {
                 parentContentControl.Content = null;
             }
-
-            // Gán UserControl mới làm currentFormChild
             currentFormChild = childControl;
-
-            // Thêm UserControl vào Content của childContentControl
             childContentControl.Content = childControl;
         }
 
