@@ -82,7 +82,22 @@ namespace WpfApp2.View
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            if (movieDataGrid.SelectedItem != null)
+            {
+                DataRowView row = (DataRowView)movieDataGrid.SelectedItem;
+                Phim selectedMovie = new Phim
+                {
+                    TenPhim = row["TenPhim"].ToString(),
+                    TheLoai = row["TheLoai"].ToString(),
+                    DaoDien = row["DaoDien"].ToString(),
+                };
+                ThemPhim editWindow = new ThemPhim(selectedMovie);
+                editWindow.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một phim để sửa.");
+            }
         }
 
         private void btnBuyTicket_Click(object sender, RoutedEventArgs e)

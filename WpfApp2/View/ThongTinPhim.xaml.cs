@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp2.Database;
 using WpfApp2.Models;
+using System.Data.SqlClient;
 
 namespace WpfApp2.View
 {
@@ -30,8 +33,17 @@ namespace WpfApp2.View
             txtTheLoai.Content = selectedMovie.TheLoai;
             txtDaoDien.Content = selectedMovie.DaoDien;
             txtThoiLuong.Content = selectedMovie.ThoiLuong.ToString();
-            txtQuocGia.Content = selectedMovie.QuocGia;
-            txtMoTa.Content = selectedMovie.MoTa;
+            txtMoTa.Text = selectedMovie.MoTa;
+            string query = "SELECT * FROM Phim";
+            DataTable dataTable = ConnectData.DataProvider.Instance.ExecuteQuery(query);
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                DataRow row = dataTable.Rows[0];
+
+                // Gán thông tin QuocGia cho điều khiển tương ứng trên màn hình ThongTinPhim
+                txtQuocGia.Content = row["QuocGia"].ToString();
+                txtMoTa.Text = row["MoTa"].ToString();
+            }
             string imagePath = selectedMovie.HinhAnh;
             if (!string.IsNullOrEmpty(imagePath))
             {

@@ -86,6 +86,7 @@
                   Margin="10,0,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="120"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
@@ -105,31 +106,26 @@
                         <RowDefinition Height="36*"/>
                     </Grid.RowDefinitions>
                     <Label  Grid.Row="0"
-                            x:Name="txtTenPhim"
                             Content="Tên phim:"
                             FontSize="20"
                             Foreground="{StaticResource titleColor1}"
                             Height="36" />
                     <Label  Grid.Row="1"
-                            x:Name="txtDaoDien"
                             Content="Đạo diễn:"
                             FontSize="20"
                             Foreground="{StaticResource titleColor1}"
                             Height="36" />
                     <Label  Grid.Row="2"
-                            x:Name="txtTheLoai"
                             Content="Thể Loại:"
                             FontSize="20"
                             Foreground="{StaticResource titleColor1}"
                             Height="36" />
                     <Label  Grid.Row="3"
-                            x:Name="txtQuocGia"
                             Content="Quốc gia:"
                             FontSize="20"
                             Foreground="{StaticResource titleColor1}"
                             Height="36" />
                     <Label  Grid.Row="4"
-                            x:Name="txtThoiLuong"
                             Content="Thời Lượng:"
                             FontSize="20"
                             Foreground="{StaticResource titleColor1}"
@@ -140,18 +136,63 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0" 
-                            x:Name="txtMoTa"
                                 VerticalAlignment="Top"
                                 Content="Mô tả:"
                                 FontSize="20"
                                 Foreground="{StaticResource titleColor1}"
                                 Height="36">
                         </Label>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="180"/>
+                    </Grid.RowDefinitions>
+                    <Label  Grid.Row="0"
+                            x:Name="txtTenPhim"
+                            FontSize="20"
+                            Foreground="{StaticResource titleColor1}"
+                            Height="36" />
+                    <Label  Grid.Row="1"
+                            x:Name="txtDaoDien"
+                            FontSize="20"
+                            Foreground="{StaticResource titleColor1}"
+                            Height="36" />
+                    <Label  Grid.Row="2"
+                            x:Name="txtTheLoai"
+                            FontSize="20"
+                            Foreground="{StaticResource titleColor1}"
+                            Height="36" />
+                    <Label  Grid.Row="3"
+                            x:Name="txtQuocGia"
+                            FontSize="20"
+                            Foreground="{StaticResource titleColor1}"
+                            Height="36" />
+                    <Label  Grid.Row="4"
+                            x:Name="txtThoiLuong"
+                            FontSize="20"
+                            Foreground="{StaticResource titleColor1}"
+                            Height="36" />
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="280"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto">
+                            <TextBlock x:Name="txtMoTa"
+                                   FontSize="15"
+                                   TextWrapping="Wrap"
+                                   Foreground="{StaticResource titleColor1}"/>
+                        </ScrollViewer>
                         <Button Grid.Column="1"
+                                Content="Phòng"
                                 VerticalAlignment="Bottom"
-                                Margin="0,20,20,20"
-                                Content="Chọn phòng"
-                                Height="40"
+                                Margin="20,0,20,10"
                                 Background="{StaticResource color4}"></Button>
                     </Grid>
                 </Grid>

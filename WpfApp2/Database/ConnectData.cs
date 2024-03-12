@@ -27,7 +27,7 @@ namespace WpfApp2.Database
 
             public static string ConnectionString { get; internal set; }
 
-            private string connectionSTR = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=MVVMLoginDb;Integrated Security=True;Encrypt=False";
+            public string connectionSTR = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=MVVMLoginDb;Integrated Security=True;Encrypt=False";
 
             public SqlConnection connection;
             public DataProvider()
@@ -102,8 +102,27 @@ namespace WpfApp2.Database
                 }
                 return data;
             }
+            public bool InsertMovie(int IdPhim, string tenPhim, string daoDien, string theLoai, string quocGia, string moTa, string hinhAnh, int thoiLuong)
+            {
+                using (SqlConnection connection = new SqlConnection(connectionSTR))
+                {
+                    connection.Open();
+                    string query = "INSERT INTO Phim (Id,TenPhim, DaoDien, TheLoai, QuocGia, MoTa, HinhAnh, ThoiLuong) " +
+                                   "VALUES (@Id, @TenPhim, @DaoDien, @TheLoai, @QuocGia, @MoTa, @HinhAnh, @ThoiLuong)";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@Id", IdPhim);
+                    command.Parameters.AddWithValue("@TenPhim", tenPhim);
+                    command.Parameters.AddWithValue("@DaoDien", daoDien);
+                    command.Parameters.AddWithValue("@TheLoai", theLoai);
+                    command.Parameters.AddWithValue("@QuocGia", quocGia);
+                    command.Parameters.AddWithValue("@MoTa", moTa);
+                    command.Parameters.AddWithValue("@HinhAnh", hinhAnh);
+                    command.Parameters.AddWithValue("@ThoiLuong", thoiLuong);
 
-
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
             public object ExecuteScalar(string query, object[] paramater = null)
             {
                 object data = 0;
