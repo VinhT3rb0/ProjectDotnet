@@ -25,7 +25,13 @@
     <Compile Update="View\PhongChieu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\SuaTTKH.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ThemPhim.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ThongTinKH.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ThongTinPhim.xaml.cs">
@@ -57,7 +63,13 @@
     <Page Update="View\PhongChieu.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\SuaTTKH.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\ThemPhim.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ThongTinKH.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ThongTinPhim.xaml">

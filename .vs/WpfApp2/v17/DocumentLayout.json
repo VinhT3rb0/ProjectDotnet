@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DUC NGUYEN\\OneDrive\\Desktop\\project1\\ProjectDotnet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9D86AC-76AA-4236-832A-645E9C13B7FF}|WpfApp2\\WpfApp2.csproj|c:\\users\\duc nguyen\\onedrive\\desktop\\project1\\projectdotnet\\wpfapp2\\view\\suattkh.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0A9D86AC-76AA-4236-832A-645E9C13B7FF}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\view\\suattkh.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9D86AC-76AA-4236-832A-645E9C13B7FF}|WpfApp2\\WpfApp2.csproj|c:\\users\\duc nguyen\\onedrive\\desktop\\project1\\projectdotnet\\wpfapp2\\view\\thongtinkh.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0A9D86AC-76AA-4236-832A-645E9C13B7FF}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\view\\thongtinkh.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9D86AC-76AA-4236-832A-645E9C13B7FF}|WpfApp2\\WpfApp2.csproj|c:\\users\\duc nguyen\\onedrive\\desktop\\project1\\projectdotnet\\wpfapp2\\view\\chonghe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0A9D86AC-76AA-4236-832A-645E9C13B7FF}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\view\\chonghe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SuaTTKH.xaml",
+              "DocumentMoniker": "C:\\Users\\DUC NGUYEN\\OneDrive\\Desktop\\project1\\ProjectDotnet\\WpfApp2\\View\\SuaTTKH.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\View\\SuaTTKH.xaml",
+              "ToolTip": "C:\\Users\\DUC NGUYEN\\OneDrive\\Desktop\\project1\\ProjectDotnet\\WpfApp2\\View\\SuaTTKH.xaml",
+              "RelativeToolTip": "WpfApp2\\View\\SuaTTKH.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T15:39:04.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThongTinKH.xaml",
+              "DocumentMoniker": "C:\\Users\\DUC NGUYEN\\OneDrive\\Desktop\\project1\\ProjectDotnet\\WpfApp2\\View\\ThongTinKH.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\View\\ThongTinKH.xaml",
+              "ToolTip": "C:\\Users\\DUC NGUYEN\\OneDrive\\Desktop\\project1\\ProjectDotnet\\WpfApp2\\View\\ThongTinKH.xaml",
+              "RelativeToolTip": "WpfApp2\\View\\ThongTinKH.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T15:38:09.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChonGhe.xaml",
+              "DocumentMoniker": "C:\\Users\\DUC NGUYEN\\OneDrive\\Desktop\\project1\\ProjectDotnet\\WpfApp2\\View\\ChonGhe.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\View\\ChonGhe.xaml",
+              "ToolTip": "C:\\Users\\DUC NGUYEN\\OneDrive\\Desktop\\project1\\ProjectDotnet\\WpfApp2\\View\\ChonGhe.xaml",
+              "RelativeToolTip": "WpfApp2\\View\\ChonGhe.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T15:26:18.02Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

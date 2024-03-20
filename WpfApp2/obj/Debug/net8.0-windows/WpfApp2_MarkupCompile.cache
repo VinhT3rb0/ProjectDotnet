@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\
+C:\Users\DUC NGUYEN\OneDrive\Desktop\project1\ProjectDotnet\WpfApp2\obj\Debug\net8.0-windows\
 WpfApp2
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\App.xaml
-101683909813
+C:\Users\DUC NGUYEN\OneDrive\Desktop\project1\ProjectDotnet\WpfApp2\App.xaml
+12-1882996213
 
-27-1711447440
-246-209937670
-CustomControls\BindablePasswordBox.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\ChonGhe.xaml;View\Datve.xaml;View\LoginView.xaml;View\MainView.xaml;View\PhongChieu.xaml;View\ThemPhim.xaml;View\ThongTinPhim.xaml;
+29-1565706213
+246-222253697
+CustomControls\BindablePasswordBox.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\ChonGhe.xaml;View\DatVe.xaml;View\LoginView.xaml;View\MainView.xaml;View\PhongChieu.xaml;View\SuaTTKH.xaml;View\ThemPhim.xaml;View\ThongTinKH.xaml;View\ThongTinPhim.xaml;
 
-False
+True
 
