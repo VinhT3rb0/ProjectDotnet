@@ -193,6 +193,7 @@
                                 Content="Phòng"
                                 VerticalAlignment="Bottom"
                                 Margin="20,0,20,10"
+                                Click="btnSelectRoom"
                                 Background="{StaticResource color4}"></Button>
                     </Grid>
                 </Grid>

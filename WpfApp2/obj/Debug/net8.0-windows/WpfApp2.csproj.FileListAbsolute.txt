@@ -212,3 +212,7 @@ C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\bin\Debug\net8.0-windows\r
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThongTinPhim.g.cs
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThongTinPhim.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\PhongChieu.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\PhongChieu.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ChonGhe.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ChonGhe.baml

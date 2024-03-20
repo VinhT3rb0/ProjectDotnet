@@ -10,6 +10,8 @@ using System.Runtime.InteropServices;
 using System.Windows.Interop;
 using System.Windows.Forms;
 using Application = System.Windows.Application;
+using System.ComponentModel;
+using System.Windows.Threading;
 
 
 namespace WpfApp2.View
@@ -17,14 +19,20 @@ namespace WpfApp2.View
     /// <summary>
     /// Interaction logic for MainView.xaml
     /// </summary>
-    public partial class MainView : Window
+    public partial class MainView : Window, INotifyPropertyChanged
     {
-        private System.Windows.Controls.UserControl currentFormChild;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public MainView()
         {
             InitializeComponent();
-
         }
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+        private System.Windows.Controls.UserControl currentFormChild;
         [DllImport("user32.dll")]
         private static extern IntPtr SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 

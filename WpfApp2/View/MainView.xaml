@@ -215,6 +215,7 @@
                                     <ImageBrush ImageSource="C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\Images\iconhuman.jpg"/>
                                 </Ellipse.Fill>
                             </Ellipse>
+                            
                         </StackPanel>
                     </Grid>
                     <Grid Grid.Row="2"

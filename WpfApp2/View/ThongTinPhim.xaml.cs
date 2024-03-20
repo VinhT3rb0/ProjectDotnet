@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using WpfApp2.Database;
 using WpfApp2.Models;
 using System.Data.SqlClient;
+using MaterialDesignThemes.Wpf;
 
 namespace WpfApp2.View
 {
@@ -56,6 +57,20 @@ namespace WpfApp2.View
             this.Hide();
             mainView.Show();
 
+        }
+
+        private void btnSelectRoom(object sender, RoutedEventArgs e)
+        {
+            Window thongTinPhim = Window.GetWindow(this);
+            if (thongTinPhim != null)
+            {
+                thongTinPhim.Hide();
+
+                // Tạo một cửa sổ mới
+                Window newWindow = new Window();
+                newWindow.Content = new PhongChieu();
+                newWindow.ShowDialog();
+            }
         }
     }
 }

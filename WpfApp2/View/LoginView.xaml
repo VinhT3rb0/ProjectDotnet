@@ -118,7 +118,7 @@
                             Grid.Row="1"
                             Orientation="Vertical"
                             Margin="0,35,0,0">
-                    <Image Source="/Images/cgv-logo.jpg"
+                    <Image Source="C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\Images\cgv-logo.jpg"
                            Width="100" Height="100"/>
                     <TextBlock Text="CGV Cinema"
                                Foreground="White"

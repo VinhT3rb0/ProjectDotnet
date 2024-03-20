@@ -10,6 +10,9 @@
     <Compile Update="CustomControls\BindablePasswordBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\ChonGhe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Datve.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\MainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PhongChieu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ThemPhim.xaml.cs">
@@ -36,6 +42,9 @@
     <Page Update="Styles\UIColors.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\ChonGhe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Datve.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -43,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PhongChieu.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ThemPhim.xaml">

@@ -36,7 +36,7 @@ namespace WpfApp2.View
         {
             try
             {
-                string query = "SELECT TenPhim, TheLoai, DaoDien, ThoiLuong, HinhAnh FROM Phim";
+                string query = "SELECT Id, TenPhim, TheLoai, DaoDien, ThoiLuong, HinhAnh FROM Phim";
                 DataTable dataTable = ConnectData.DataProvider.Instance.ExecuteQuery(query);
                 if (dataTable != null && dataTable.Rows.Count > 0)
                 {
@@ -77,8 +77,38 @@ namespace WpfApp2.View
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
+            if (movieDataGrid.SelectedItem != null)
+            {
+                DataRowView row = (DataRowView)movieDataGrid.SelectedItem;
+                int movieId = Convert.ToInt32(row["Id"]);
 
+                try
+                {
+                    string deleteQuery = "DELETE FROM Phim WHERE Id = @Id";
+                    int rowsAffected = ConnectData.DataProvider.Instance.ExecuteNonQuery(deleteQuery, new object[] { movieId });
+                    if (rowsAffected > 0)
+                    {
+                        LoadData();
+                        MessageBox.Show("Xóa phim thành công!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thể xóa phim. Vui lòng thử lại.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Đã xảy ra lỗi khi xóa phim: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một phim để xóa.");
+            }
         }
+
+
+
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
