@@ -36,7 +36,7 @@ namespace WpfApp2.View
         {
             try
             {
-                string query = "SELECT Id, TenPhim, TheLoai, DaoDien, ThoiLuong, HinhAnh FROM Phim";
+                string query = "SELECT Id, TenPhim, TheLoai, DaoDien, ThoiLuong FROM Phim";
                 DataTable dataTable = ConnectData.DataProvider.Instance.ExecuteQuery(query);
                 if (dataTable != null && dataTable.Rows.Count > 0)
                 {
@@ -133,8 +133,6 @@ namespace WpfApp2.View
         private void btnBuyTicket_Click(object sender, RoutedEventArgs e)
         {
             DataRowView selectedRow = (DataRowView)movieDataGrid.SelectedItem;
-
-            // Kiểm tra xem selectedRow có tồn tại không
             if (selectedRow != null)
             {
                 // Trích xuất DataRow từ DataRowView

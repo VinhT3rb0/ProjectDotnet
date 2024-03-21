@@ -91,10 +91,8 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
                     <Image x:Name="imgPoster" 
-                           Width="250" 
-                           Height="350" 
-                           Source="{Binding HinhAnh}" 
-                           Stretch="UniformToFill"/>
+                           Source="C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\Images\Beekeeper.jpg" 
+                           Stretch="UniformToFill" Margin="0,18,30,31"/>
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>

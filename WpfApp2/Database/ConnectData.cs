@@ -24,11 +24,8 @@ namespace WpfApp2.Database
                 }
                 private set { DataProvider.instance = value; }
             }
-
             public static string ConnectionString { get; internal set; }
-
             public string connectionSTR = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=MVVMLoginDb;Integrated Security=True;Encrypt=False";
-
             public SqlConnection connection;
             public DataProvider()
             {

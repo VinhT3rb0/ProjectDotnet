@@ -25,6 +25,9 @@
     <Compile Update="View\PhongChieu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\ThanhToan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ThemPhim.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\PhongChieu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ThanhToan.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ThemPhim.xaml">
