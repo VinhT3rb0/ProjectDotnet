@@ -93,12 +93,11 @@ namespace WpfApp2.View
 
         private void RadioButton_Click_3(object sender, RoutedEventArgs e)
         {
-
+            OpenChildForm(new ThongTinKH());
         }
 
         private void RadioButton_Click_4(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void RadioButton_Click_5(object sender, RoutedEventArgs e)

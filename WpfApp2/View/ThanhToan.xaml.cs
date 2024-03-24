@@ -19,9 +19,19 @@ namespace WpfApp2.View
     /// </summary>
     public partial class ThanhToan : Window
     {
-        public ThanhToan()
+        public ThanhToan(string tenPhim, string ngayChieu, string phongChieu, int giaVe, string selectedSeatsStr)
         {
             InitializeComponent();
+            _moviename.Content = tenPhim;
+            Time_Date.Content = ngayChieu;
+            Room.Content = phongChieu;
+            _totalticket.Content = $"{giaVe:N0} VND";
+            Seats.Content = selectedSeatsStr;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Đặt vé thành công");
         }
     }
 }

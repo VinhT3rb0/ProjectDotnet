@@ -51,7 +51,7 @@
                            FontWeight="Bold"
                            FontFamily="Ubuntu" Height="38" Width="302"/>
                     <Grid Grid.Row="1"
-                          Background="White" Margin="0,10,26,-10">
+                          Background="White" Margin="10,0,16,0">
                         <Label Content="Thông tin khách hàng"
                                FontSize="25"
                                FontWeight="Bold"
@@ -65,7 +65,7 @@
                             <CheckBox IsThreeState="False"
                                       IsChecked="{Binding IsWalkinGuest}"
                                       Content="Khách vãng lai"
-                                      Margin="-5,0,15,-34"
+                                      Margin="28,0,15,-34"
                                       FontSize="18"
                                       VerticalAlignment="Bottom"
                                       x:Name="checkBox"
@@ -83,7 +83,7 @@
                             <TextBlock Text="Điện thoại:"
                                         Margin="15,58,10,-43" />
                             <TextBox 
-                                        Text="{Binding PhoneNumber, Mode=TwoWay}" Grid.ColumnSpan="2" Margin="92,26,10,-26"/>
+                                        Grid.ColumnSpan="2" Margin="92,58,10,-26"/>
 
                             <Grid.Style>
                                 <Style>
@@ -105,13 +105,7 @@
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Họ và tên:"  HorizontalAlignment="Left" Margin="16,50,0,-30" />
-                            <TextBox
-                                     IsEnabled="False"
-                                     Margin="94,50,51,0"
-                                     VerticalContentAlignment="Bottom"
-                                     VerticalAlignment="Top" 
-                                     Text="{Binding Name}"
-                                     TextAlignment="Center" Grid.ColumnSpan="2"/>
+                            <TextBox  Grid.ColumnSpan="2" Margin="95,42,79,-17"/>
                             <Grid.Style>
                                 <Style>
                                     <Style.Triggers>
@@ -132,20 +126,7 @@
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Email:" Margin="39,38,39,-19" />
-                            <TextBox
-                                         IsEnabled="False"
-                                         Margin="94,45,51,0"
-                                         VerticalContentAlignment="Bottom"
-                                         VerticalAlignment="Top" 
-                                         Text="{Binding Email}"
-                                         TextAlignment="Center" Grid.ColumnSpan="2"/>
-                            <TextBox
-                                IsEnabled="False"
-                                Margin="94,79,51,0"
-                                VerticalContentAlignment="Bottom"
-                                VerticalAlignment="Top" 
-                                Text="{Binding Email}"
-                                TextAlignment="Center" Grid.ColumnSpan="2"/>
+                            <TextBox  Grid.ColumnSpan="2" Margin="97,30,77,-6"/>
                             <Grid.Style>
                                 <Style>
                                     <Style.Triggers>
@@ -189,46 +170,56 @@
                        Grid.Column="0"
                        FontSize="20" />
                                     <Label Grid.Column="1"
-                       HorizontalAlignment="Right"
                        FontSize="20"
                        x:Name="_moviename"
+                       Width="300"
                        Content="{Binding MovieName}" 
-                       FontWeight="Bold"/>
+                       FontWeight="Bold">
+                                        <Label.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform ScaleX="1"/>
+                                                <SkewTransform/>
+                                                <RotateTransform/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Label.RenderTransform>
+                                    </Label>
                                 </Grid>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <Grid Width="420"
                   Margin="0,15,0,0">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition />
-                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="4*" />
+                                        <ColumnDefinition Width="31*"/>
+                                        <ColumnDefinition Width="35*" />
                                     </Grid.ColumnDefinitions>
 
                                     <Label Content="Ngày chiếu"
                        Grid.Column="0"
-                       FontSize="20" />
+                       FontSize="20" Grid.ColumnSpan="2" />
                                     <Label Content="{Binding Date}"
-                       Grid.Column="1"
-                       HorizontalAlignment="Right"
-                       FontSize="20" />
+                                           x:Name="Time_Date"
+                                            Grid.Column="1"
+                                            FontSize="20" Grid.ColumnSpan="2" Margin="93,0,96,0" />
                                 </Grid>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Grid Width="420"
+                                <Grid
                   Margin="0,15,0,0">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition />
                                         <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Content="Giờ chiếu"
+                                    <Label Content="Ghế"
                        Grid.Column="0"
                        FontSize="20" />
-                                    <Label Content="{Binding Time}"
+                                    <Label
                        Grid.Column="1"
-                       HorizontalAlignment="Right"
+                       HorizontalAlignment="Center"
                        FontSize="20"
-                       x:Name="_time"
+                       x:Name="Seats"
                        FontWeight="Bold"/>
                                 </Grid>
                             </StackPanel>
@@ -253,8 +244,9 @@
                        Grid.Column="0"
                        FontSize="20" Margin="0,-17,0,18" />
                                     <Label Content="{Binding Room}"
+                                           x:Name="Room"
                        Grid.Column="1"
-                       HorizontalAlignment="Right"
+                       HorizontalAlignment="Left"
                        FontSize="20"
                        FontWeight="Bold"/>
                                 </Grid>
@@ -319,7 +311,7 @@
                        FontSize="20" />
                                     <Label x:Name="_totalticket"
                        Grid.Column="1"
-                       HorizontalAlignment="Right"
+                       HorizontalAlignment="Left"
                        FontSize="20"
                        Content="{Binding TotalPriceMovie}" />
                                 </Grid>
@@ -378,13 +370,13 @@
                         </Grid>
                     </StackPanel>
                 </Grid>
-                <TextBlock Text="Tuổi:" HorizontalAlignment="Left" Margin="41,257,0,0" VerticalAlignment="Top"/>
+       
                 <Button
                         Content="Đặt vé"
                         VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Margin="0,0,30,10"
-                        Click="btnSelect_Click"
+                        Click="Button_Click"
                         Background="{StaticResource color4}" Grid.Column="1"/>
             </Grid>
         </Border>

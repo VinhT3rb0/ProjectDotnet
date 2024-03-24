@@ -22,12 +22,9 @@ namespace WpfApp2.View
     public partial class ThemPhim : Window
     {
         private Phim editedMovie;
-
-        // Constructor nhận tham số kiểu Phim
         public ThemPhim(Phim movie)
         {
             InitializeComponent();
-            // Lưu đối tượng Phim được truyền vào cho việc chỉnh sửa
             this.editedMovie = movie;
             movieName.Text = movie.TenPhim;
             movieGender.Text = movie.TheLoai;

@@ -19,9 +19,11 @@ namespace WpfApp2.View
 {
     public partial class PhongChieu : UserControl
     {
-        public PhongChieu()
+        private string _tenPhim;
+        public PhongChieu(string tenPhim) 
         {
             InitializeComponent();
+            _tenPhim = tenPhim;
             LoadData();
         }
         private void LoadData()
@@ -58,7 +60,8 @@ namespace WpfApp2.View
             if (roomDataGrid.SelectedItem is DataRowView selectedRow)
             {
                 int roomId = Convert.ToInt32(selectedRow["Id"]);
-                var chonGhe = new ChonGhe(roomId);
+                string tenPhim = DatVe.TenPhim;
+                var chonGhe = new ChonGhe(roomId, _tenPhim);
                 chonGhe.Show();
             }
             else

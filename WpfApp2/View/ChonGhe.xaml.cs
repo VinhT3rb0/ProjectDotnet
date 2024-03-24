@@ -12,11 +12,16 @@ namespace WpfApp2.View
     public partial class ChonGhe : Window
     {
         private int _roomId;
+        private int _currentPrice = 0;
         private DispatcherTimer timer;
-        public ChonGhe(int roomId)
+        public ChonGhe(int roomId, string tenPhim)
         {
-            _roomId=roomId;
             InitializeComponent();
+            _roomId=roomId;
+            filmName.Text = tenPhim;
+            SuatChieu.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            _currentPrice = 70000;
+            GiaVe.Content = _currentPrice.ToString("N0") + " VND";
             SetupDateTimeDisplay();
         }
         private void SetupDateTimeDisplay()
@@ -44,14 +49,13 @@ namespace WpfApp2.View
             Selected, 
             Occupied 
         }
+        private List<string> selectedSeats = new List<string>();
         private void btnSelect_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
-            if (button == null) return;
+            if (button == null || button.Tag == null) return;
 
             var seatId = button.Tag.ToString();
-
-            // Khởi tạo trạng thái ghế nếu chưa có
             if (!seatStatuses.ContainsKey(seatId))
             {
                 seatStatuses[seatId] = SeatStatus.Available;
@@ -61,17 +65,30 @@ namespace WpfApp2.View
                 case SeatStatus.Available:
                     button.Background = Brushes.Yellow;
                     seatStatuses[seatId] = SeatStatus.Selected;
+                    _currentPrice += 70000;
+                    selectedSeats.Add(seatId);
+                    UpdatePriceDisplay();
                     break;
                 case SeatStatus.Selected:
-                    button.Background = Brushes.Red; // Đã chọn
+                    button.Background = Brushes.Red; 
                     seatStatuses[seatId] = SeatStatus.Occupied;
+                    selectedSeats.Remove(seatId);
                     break;
                 case SeatStatus.Occupied:
                     break;
             }
             UpdateOtherButtons();
+            UpdateSelectedSeatsDisplay();
         }
-
+        private void UpdatePriceDisplay()
+        {
+            GiaVe.Content = "70.000" + " VND";
+            TotalPrice.Content = _currentPrice.ToString("N0") + "VND";
+        }
+        private void UpdateSelectedSeatsDisplay()
+        {
+            select_Seats.Content = string.Join(", ", selectedSeats);
+        }
         private void UpdateOtherButtons()
         {
             foreach (var child in SeatsGrid.Children)
@@ -97,6 +114,17 @@ namespace WpfApp2.View
                     }
                 }
             }
+        }
+
+        private void btnBill_Click(object sender, RoutedEventArgs e)
+        {
+            string tenPhim = filmName.Text;
+            string ngayChieu = SuatChieu.Text;
+            string phongChieu = _roomId.ToString();
+            int giaVe = _currentPrice;
+            string selectedSeatsStr = string.Join(", ", selectedSeats);
+            ThanhToan thanhToanWindow = new ThanhToan(tenPhim, ngayChieu, _roomId.ToString(), giaVe, selectedSeatsStr);
+            thanhToanWindow.Show();
         }
     }
 }

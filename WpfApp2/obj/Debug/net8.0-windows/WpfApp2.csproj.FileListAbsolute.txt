@@ -216,3 +216,9 @@ C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\V
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\PhongChieu.baml
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ChonGhe.g.cs
 C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ChonGhe.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThanhToan.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThanhToan.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThongTinKH.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\ThongTinKH.baml
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\SuaTTKH.g.cs
+C:\Users\aduyn\OneDrive\Desktop\projectdotnet\WpfApp2\obj\Debug\net8.0-windows\View\SuaTTKH.baml

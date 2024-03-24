@@ -94,16 +94,13 @@
             MinWidth="60"
             Binding="{Binding soLuongGhe}"
             Width="*"/>
-                    <DataGridTextColumn
-            Header="Loại phòng"
-            MinWidth="60"
-            Width="*">
-                        <DataGridTextColumn.ElementStyle>
-                            <Style TargetType="TextBlock">
-                                <Setter Property="Text" Value="2D"/>
-                            </Style>
-                        </DataGridTextColumn.ElementStyle>
-                    </DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Loại phòng" MinWidth="60" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="2D" HorizontalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
             <Button Grid.Row="2"

@@ -19,17 +19,16 @@ using MaterialDesignThemes.Wpf;
 
 namespace WpfApp2.View
 {
-    /// <summary>
-    /// Interaction logic for ThongTinPhim.xaml
-    /// </summary>
     public partial class ThongTinPhim : Window
     {
+        public static string TenPhimDuocChon { get; private set; }
         public ThongTinPhim()
         {
             InitializeComponent();
         }
         public ThongTinPhim(Phim selectedMovie) : this()
         {
+            TenPhimDuocChon = selectedMovie.TenPhim;
             txtTenPhim.Content = selectedMovie.TenPhim;
             txtTheLoai.Content = selectedMovie.TheLoai;
             txtDaoDien.Content = selectedMovie.DaoDien;
@@ -40,8 +39,6 @@ namespace WpfApp2.View
             if (dataTable != null && dataTable.Rows.Count > 0)
             {
                 DataRow row = dataTable.Rows[0];
-
-                // Gán thông tin QuocGia cho điều khiển tương ứng trên màn hình ThongTinPhim
                 txtQuocGia.Content = row["QuocGia"].ToString();
                 txtMoTa.Text = row["MoTa"].ToString();
             }
@@ -61,14 +58,13 @@ namespace WpfApp2.View
 
         private void btnSelectRoom(object sender, RoutedEventArgs e)
         {
+            string tenPhim = ThongTinPhim.TenPhimDuocChon;
             Window thongTinPhim = Window.GetWindow(this);
             if (thongTinPhim != null)
             {
                 thongTinPhim.Hide();
-
-                // Tạo một cửa sổ mới
                 Window newWindow = new Window();
-                newWindow.Content = new PhongChieu();
+                newWindow.Content = new PhongChieu(tenPhim);
                 newWindow.ShowDialog();
             }
         }

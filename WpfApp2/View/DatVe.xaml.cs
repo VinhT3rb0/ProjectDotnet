@@ -27,6 +27,8 @@ namespace WpfApp2.View
     /// </summary>
     public partial class DatVe : UserControl
     {
+        public static string TenPhim { get; internal set; }
+
         public DatVe()
         {
             InitializeComponent();
@@ -129,13 +131,11 @@ namespace WpfApp2.View
                 MessageBox.Show("Vui lòng chọn một phim để sửa.");
             }
         }
-
-        private void btnBuyTicket_Click(object sender, RoutedEventArgs e)
+        public void btnBuyTicket_Click(object sender, RoutedEventArgs e)
         {
             DataRowView selectedRow = (DataRowView)movieDataGrid.SelectedItem;
             if (selectedRow != null)
             {
-                // Trích xuất DataRow từ DataRowView
                 DataRow row = selectedRow.Row;
                 Phim selectedMovie = new Phim
                 {
